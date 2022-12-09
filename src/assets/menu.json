@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Backups",
+    "link": "/backups",
+    "icon": "/assets/icons/05-Internet-Networks-Servers/09-Cloud/cloud-upload.svg",
+    "items": [
+      {
+        "name": "Configs",
+        "link": "/backups/configs",
+        "icon": "/assets/icons/01-Interface-Essential/12-Settings/cog-play.svg"
+      },
+
+      {
+        "name": "Archives",
+        "link": "/backups/archives",
+        "icon": "/assets/icons/11-Content/04-Archives/archive-books.svg"
+      }
+    ]
+  }
+]

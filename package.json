@@ -1,0 +1,8 @@
+{
+  "name": "@solenopsys/sc-fm-backups-invicta",
+  "version": "0.9.1",
+  "scripts": {
+    "test": "node index.js",
+    "build": "tsc -p tsconfig.lib.json"
+  }
+}
