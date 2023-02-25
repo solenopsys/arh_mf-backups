@@ -115,7 +115,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/alexstorm/backups',
+      'dist/modules/richteri/backups',
       'packages/modules/backups-invicta/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
