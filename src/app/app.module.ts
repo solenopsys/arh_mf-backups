@@ -2,14 +2,14 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router';
 import {BootstrapComponent, FuiTemplatesModule, GridState, TABLE_PAGE} from "@solenopsys/ui-templates";
-import {DataPageConfig, FieldType} from "@solenopsys/lib-dgraph";
+import {DataPageConfig, FieldType} from "@solenopsys/fl-dgraph";
 import {FormsModule} from "@angular/forms";
-import {createNgxs} from "@solenopsys/lib-storage";
+import {createNgxs} from "@solenopsys/fl-storage";
 import { FuiGridModule, RowsState} from "@solenopsys/ui-lists";
 import {CommonModule} from "@angular/common";
 import {environment} from "../environments/environment";
-import {ClusterState} from "@solenopsys/lib-clusters";
-import {DgraphDataBuffered} from "@solenopsys/lib-dgraph";
+import {ClusterState} from "@solenopsys/fl-clusters";
+import {DgraphDataBuffered} from "@solenopsys/fl-dgraph";
 
 
 export const BACKUPS: DataPageConfig = {
