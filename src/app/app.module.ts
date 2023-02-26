@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router';
-import {BootstrapComponent, FuiTemplatesModule, GridState, TABLE_PAGE} from "@solenopsys/uimatrix-templates";
+import {BootstrapComponent, FuiTemplatesModule, GridState, TABLE_PAGE} from "@solenopsys/ui-templates";
 import {DataPageConfig, FieldType} from "@solenopsys/lib-dgraph";
 import {FormsModule} from "@angular/forms";
 import {createNgxs} from "@solenopsys/lib-storage";
-import { FuiGridModule, RowsState} from "@solenopsys/uimatrix-lists";
+import { FuiGridModule, RowsState} from "@solenopsys/ui-lists";
 import {CommonModule} from "@angular/common";
 import {environment} from "../environments/environment";
 import {ClusterState} from "@solenopsys/lib-clusters";
