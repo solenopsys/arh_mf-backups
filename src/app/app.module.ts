@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router';
-import {BootstrapComponent, FuiTemplatesModule, GridState, TABLE_PAGE} from "@solenopsys/ui-templates";
+import {BootstrapComponent, UITemplatesModule, GridState, TABLE_PAGE} from "@solenopsys/ui-templates";
 import {DataPageConfig, FieldType} from "@solenopsys/fl-dgraph";
 import {FormsModule} from "@angular/forms";
 import {createNgxs} from "@solenopsys/fl-storage";
-import { FuiGridModule, RowsState} from "@solenopsys/ui-lists";
+import { UIListsModule, RowsState} from "@solenopsys/ui-lists";
 import {CommonModule} from "@angular/common";
 import {environment} from "../environments/environment";
 import {ClusterState} from "@solenopsys/fl-clusters";
@@ -69,10 +69,10 @@ export const IMPORTS_CONF = [
   BrowserModule,
   RouterModule.forChild(routes),//todo сделать child
   FormsModule,
-  FuiTemplatesModule,
+  UITemplatesModule,
   ...createNgxs(!environment.production, []), //todo убрать это ClusterState, HStreamsState
 
-  FuiGridModule,
+  UIListsModule,
   CommonModule,
 ]
 
