@@ -1,24 +1,24 @@
 {
-  "name": "backups-invicta",
+  "name": "mf-backups",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "packages/modules/backups-invicta/src",
+  "sourceRoot": "packages/modules/mf-backups/src",
   "prefix": "app",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/modules/backups-invicta",
-        "index": "packages/modules/backups-invicta/src/index.html",
-        "main": "packages/modules/backups-invicta/src/main.ts",
-        "polyfills": "packages/modules/backups-invicta/src/polyfills.ts",
-        "tsConfig": "packages/modules/backups-invicta/tsconfig.app.json",
+        "outputPath": "dist/modules/mf-backups",
+        "index": "packages/modules/mf-backups/src/index.html",
+        "main": "packages/modules/mf-backups/src/main.ts",
+        "polyfills": "packages/modules/mf-backups/src/polyfills.ts",
+        "tsConfig": "packages/modules/mf-backups/tsconfig.app.json",
         "assets": [
-          "packages/modules/backups-invicta/src/favicon.ico",
-          "packages/modules/backups-invicta/src/assets"
+          "packages/modules/mf-backups/src/favicon.ico",
+          "packages/modules/mf-backups/src/assets"
         ],
-        "styles": ["packages/modules/backups-invicta/src/styles.scss"],
+        "styles": ["packages/modules/mf-backups/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -37,8 +37,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "packages/modules/backups-invicta/src/environments/environment.ts",
-              "with": "packages/modules/backups-invicta/src/environments/environment.prod.ts"
+              "replace": "packages/modules/mf-backups/src/environments/environment.ts",
+              "with": "packages/modules/mf-backups/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -58,10 +58,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "backups-invicta:build:production"
+          "browserTarget": "backups:build:production"
         },
         "development": {
-          "browserTarget": "backups-invicta:build:development"
+          "browserTarget": "backups:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -69,15 +69,15 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "backups-invicta:build"
+        "browserTarget": "backups:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "packages/modules/backups-invicta/**/*.ts",
-          "packages/modules/backups-invicta/**/*.html"
+          "packages/modules/mf-backups/**/*.ts",
+          "packages/modules/mf-backups/**/*.html"
         ]
       }
     },
@@ -85,7 +85,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "packages/modules/backups-invicta/jest.config.ts",
+        "jestConfig": "packages/modules/mf-backups/jest.config.ts",
         "passWithNoTests": true
       }
     }

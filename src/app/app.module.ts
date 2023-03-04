@@ -61,7 +61,7 @@ const TABLES = {
 export const PROVIDERS_CONF = [
   //todo убрать это
   {provide: 'tables', useValue: TABLES},
-  {provide: 'assets_dir', useValue: "/fm/modules/richteri/backups"},
+  {provide: 'assets_dir', useValue: "/fm/modules/mf-richteri/backups"},
   {provide: 'mod_name', useValue: "backups"}
 ]
 

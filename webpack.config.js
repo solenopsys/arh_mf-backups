@@ -48,7 +48,7 @@ module.exports = {
       name: 'backups',
       filename: 'remoteEntry.js',
       exposes: {
-        './Module': 'packages/modules/backups-invicta/src/app/entry.module.ts',
+        './Module': 'packages/modules/mf-backups/src/app/entry.module.ts',
       },
       shared: share({
         '@angular/core': {
@@ -115,8 +115,8 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/richteri/backups',
-      'packages/modules/backups-invicta/src/assets/menu.json'
+      'dist/modules/mf-richteri/backups',
+      'packages/modules/mf-backups/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
   ],

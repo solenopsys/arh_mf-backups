@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/modules/backups',
+  coverageDirectory: '../../coverage/modules/mf-backups',
   transform: {
     '^.+.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
