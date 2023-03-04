@@ -9,7 +9,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/backups-invicta",
+        "outputPath": "dist/modules/backups-invicta",
         "index": "packages/modules/backups-invicta/src/index.html",
         "main": "packages/modules/backups-invicta/src/main.ts",
         "polyfills": "packages/modules/backups-invicta/src/polyfills.ts",
