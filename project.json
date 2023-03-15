@@ -7,7 +7,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/modules/mf-backups",
         "index": "packages/modules/mf-backups/src/index.html",
@@ -18,7 +20,9 @@
           "packages/modules/mf-backups/src/favicon.ico",
           "packages/modules/mf-backups/src/assets"
         ],
-        "styles": ["packages/modules/mf-backups/src/styles.scss"],
+        "styles": [
+          "packages/modules/mf-backups/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -83,7 +87,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "packages/modules/mf-backups/jest.config.ts",
         "passWithNoTests": true
