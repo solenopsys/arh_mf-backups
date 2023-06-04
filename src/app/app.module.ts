@@ -1,16 +1,13 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router';
-import {BootstrapComponent, UITemplatesModule, GridState, TABLE_PAGE} from "@solenopsys/ui-templates";
-import {DataPageConfig, FieldType} from "@solenopsys/fl-dgraph";
+import {BootstrapComponent, TABLE_PAGE, UITemplatesModule} from "@solenopsys/ui-templates";
+import {DataPageConfig, DgraphDataBuffered, FieldType} from "@solenopsys/fl-dgraph";
 import {FormsModule} from "@angular/forms";
-import {createNgxs} from "@solenopsys/fl-storage";
-import { UIListsModule, RowsState} from "@solenopsys/ui-lists";
+import {UIListsModule} from "@solenopsys/ui-lists";
 import {CommonModule} from "@angular/common";
-import {environment} from "../environments/environment";
 import {ClusterState} from "@solenopsys/fl-clusters";
-import {DgraphDataBuffered} from "@solenopsys/fl-dgraph";
-
+import {HStreamsState} from "@solenopsys/fl-hyperstreams";
 
 export const BACKUPS: DataPageConfig = {
   title: 'Backups',
@@ -65,12 +62,13 @@ export const PROVIDERS_CONF = [
   {provide: 'mod_name', useValue: "backups"}
 ]
 
+export const STATES=[ ClusterState, HStreamsState]
+
 export const IMPORTS_CONF = [
   BrowserModule,
   RouterModule.forChild(routes),//todo сделать child
   FormsModule,
   UITemplatesModule,
-  ...createNgxs(!environment.production, []), //todo убрать это ClusterState, HStreamsState
 
   UIListsModule,
   CommonModule,

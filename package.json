@@ -1,8 +1,17 @@
 {
   "name": "@solenopsys/mf-backups",
-  "version": "0.9.1",
+  "version": "0.1.0",
   "scripts": {
-    "test": "node index.js",
-    "build": "etsc"
+    "build": "ng-packagr -p ng-package.json -c ../../../../tsconfig.base.json"
+  },
+  "peerDependencies": {
+    "@solenopsys/fl-clusters": "^0.1.0",
+    "@solenopsys/fl-dgraph": "^0.1.0",
+    "@solenopsys/fl-storage": "^0.1.0",
+    "@solenopsys/ui-lists": "^0.1.0",
+    "@solenopsys/ui-templates": "^0.1.0",
+    "@solenopsys/fl-hyperstreams": "^0.1.0"
   }
 }
+
+
